@@ -1,0 +1,471 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    font-family: "맑은 고딕";
+    box-sizing: border-box;
+}
+
+ul, li, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*width: 1260px; height: what you want*/
+#topbanner {
+    width: 1260px;
+    height: 80px;
+    background-color: #C2A59D;
+}
+
+    #topbanner a img {
+        width: 620px;
+        height: 80px;
+    }
+
+    #topbanner > a:nth-child(2) {
+        width: 620px;
+        height: 80px;
+        margin: 0 0 0 -15px;
+    }
+
+    #topbanner #closebtn1 {
+        width: 25px;
+        height: 25px;
+        float: right;
+        padding: 0;
+        color: #fff;
+        background-color: grey;
+        border: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+#topwrap {
+    float: left;
+    width: 100%;
+    background-color: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#gateicon {
+    margin: 0 auto;
+    width: 1260px;
+    background-color: none;
+}
+
+    #gateicon > #gatebtn {
+        float: left;
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin: 0px;
+    }
+
+        #gateicon > #gatebtn > ul > li {
+            width: 60px;
+            font-size: 15px;
+            float: left;
+            margin: 0px;
+            padding: 5px 5px 5px 15px;
+            background-color: none;
+            border-left: 1px solid #eee;
+        }
+
+            #gateicon > #gatebtn > ul > li:nth-of-type(2) > a {
+                font-weight: bold;
+                color: red;
+            }
+
+            #gateicon > #gatebtn > ul > li:last-of-type {
+                border-right: 1px solid #eee;
+            }
+
+    #gateicon > #loginlist {
+        width: 350px;
+        height: 30px;
+        background-color: none;
+        float: right;
+    }
+
+.menu1 {
+    float: right;
+    margin: 0px;
+}
+
+    .menu1 > li {
+        font-size: 12px;
+        float: left;
+        margin: 0px;
+        padding: 10px 3px;
+        background-color: none;
+    }
+
+.sub1 {
+    background-color: #eee;
+    border: 1px solid grey;
+    margin: 5px 0 0 0px;
+    display: none;
+    z-index: 3;
+    position: relative;
+    line-height: 25px;
+}
+
+    .sub1 > li {
+        transition: all 0.5s ease;
+    }
+
+
+
+
+#head {
+    float: left;
+    width: 100%;
+    background-color: none;
+    height: 100px;
+}
+
+    #head > #headwrap {
+        width: 1260px;
+        background-color: none;
+        height: 100px;
+    }
+
+        #head > #headwrap > #logo {
+            float: left;
+            width: 280px;
+            background-color: none;
+            height: 100px;
+        }
+
+    #head #headwrap #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #head > #headwrap > #searchwrap {
+        float: left;
+        margin: 0 0 0 100px;
+        width: 500px;
+        background-color: none;
+        height: 100px;
+    }
+
+        /*제대로 된 검색창 구현하기*/
+        #head > #headwrap > #searchwrap > #search {
+            width: 100%;
+            height: 70px;
+            background-color: none;
+        }
+
+            #head > #headwrap > #searchwrap > #search > .searchtext {
+                width: 450px;
+                font-size: 15px;
+                float: left;
+                margin: 35px 0 0 0px;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #EF554D;
+            }
+
+#search > button {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 35px 0 0 0px;
+    border: none;
+    border-bottom: 2px solid #EF554D;
+    background-color: white;
+    cursor: pointer;
+}
+
+    #search > button > img {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 0 0 0 -5px;
+    }
+
+#head > #headwrap > #searchwrap > #searchword {
+    width: 100%;
+    height: 30px;
+    background-color: none;
+}
+
+    #head > #headwrap > #searchwrap > #searchword > ul > li {
+        float: left;
+        margin: 0 10px 0 0px;
+    }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li:first-of-type {
+            margin: 0 10px 0 10px;
+        }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li > a {
+            font-size: 10px;
+            color: black;
+        }
+
+#head > #headwrap > #banner {
+    float: right;
+    width: 250px;
+    margin: 15px 0 0 0px;
+    background-color: none;
+    height: 80px;
+}
+
+#banner > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*navigation*/
+#naviwrap {
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid black;
+    background-color: #EF554D;
+    font-weight: bold;
+    float: left;
+}
+
+    #naviwrap > #navigation {
+        width: 1260px;
+        height: 40px;
+        background-color: none;
+    }
+
+        #naviwrap > #navigation > .allnavi {
+            width: 200px;
+            float: left;
+            height: 38px;
+            background-color: #C12E27;
+            position: relative;
+        }
+
+.allnavi > a > i {
+    margin: 0 10px -5px 0px;
+}
+
+.allnavi > a {
+    width: 200px;
+    float: right;
+    margin: 8px 0 10px 0px;
+    background-color: none;
+    text-align: center;
+    color: #fff;
+}
+
+/*전체 카테고리 하위 네비*/
+
+#subcateg {
+    float: left;
+    width: 1260px;
+    height: auto;
+    margin: 38px 0 0 0px;
+    background-color: white;
+    border: 2px solid #C12E27;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+    #subcateg h2 {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    #subcateg ul {
+        float: left;
+    }
+
+        #subcateg ul li {
+            display: flex;
+            line-height: 25px;
+        }
+
+            #subcateg ul li a {
+                margin: 0 0 0 15px;
+                font-size: 12px;
+                color: grey;
+            }
+
+#subcateg1 {
+    float: left;
+    margin: 0 0 0 3px;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg2 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg3 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg4 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg5 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+}
+
+#naviwrap > #navigation > .navi1 {
+    width: 400px;
+    float: left;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi1 > ul {
+        margin: 0 0 0 30px;
+        float: left;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi1 > ul > li {
+            float: left;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi1 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+
+#naviwrap > #navigation > .navi2 {
+    width: 600px;
+    float: right;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi2 > ul {
+        margin: 0px;
+        float: right;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi2 > ul > li {
+            float: left;
+            margin: 0 20px 0 20px;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi2 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    float: left;
+    background-color: #eee;
+}
+
+#footerbox {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+#footerlist {
+    width: 1260px;
+    height: 50px;
+    background-color: none;
+}
+
+    #footerlist ul li {
+        float: left;
+        margin: 20px 20px 0 0px;
+        font-size: 13px;
+        color: grey;
+    }
+
+        #footerlist ul li a {
+            color: grey;
+        }
+
+    #footerlist > ul > li:first-child > a {
+        color: black;
+        font-weight: bold;
+    }
+
+#info {
+    width: 1260px;
+    height: auto;
+}
+
+    #info .specific {
+        width: 410px;
+        height: 100px;
+        float: left;
+        margin: 10px 0 30px 10px;
+        background-color: none;
+        border-right: 1px solid grey;
+    }
+
+        #info .specific:last-of-type {
+            border-right: none;
+        }
+
+        #info .specific h6 {
+            font-size: 13px;
+        }
+
+        #info .specific li {
+            margin: 0 0 0 10px;
+            font-size: 12px;
+            line-height: 30px;
+            color: grey;
+        }
+
+    #info p span {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #info p {
+        font-size: 12px;
+        color: grey;
+        margin: 0 0 30px 0px;
+    }

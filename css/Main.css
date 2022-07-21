@@ -1,0 +1,1359 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    font-family: "맑은 고딕";
+    box-sizing: border-box;
+}
+
+ul, li, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*상단 배너창*/
+#topbanner {
+    width: 1260px;
+    height: 80px;
+    background-color: #C2A59D;
+}
+
+    #topbanner a img {
+        width: 620px;
+        height: 80px;
+    }
+
+    #topbanner > a:nth-child(2) {
+        width: 620px;
+        height: 80px;
+        margin: 0 0 0 -15px;
+    }
+
+    #topbanner #closebtn1 {
+        width: 25px;
+        height: 25px;
+        float: right;
+        padding: 0;
+        color: #fff;
+        background-color: grey;
+        border: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+/*페이지 이동 및 로그인 창*/
+#topwrap {
+    float: left;
+    width: 100%;
+    background-color: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#gateicon {
+    margin: 0 auto;
+    width: 1260px;
+    background-color: none;
+}
+
+    #gateicon > #gatebtn {
+        float: left;
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin: 0px;
+    }
+
+        #gateicon > #gatebtn > ul > li {
+            width: 60px;
+            font-size: 15px;
+            float: left;
+            margin: 0px;
+            padding: 5px 5px 5px 15px;
+            background-color: none;
+            border-left: 1px solid #eee;
+        }
+
+            #gateicon > #gatebtn > ul > li:nth-of-type(2) > a {
+                font-weight: bold;
+                color: red;
+            }
+
+            #gateicon > #gatebtn > ul > li:last-of-type {
+                border-right: 1px solid #eee;
+            }
+
+    #gateicon > #loginlist {
+        width: 350px;
+        height: 30px;
+        background-color: none;
+        float: right;
+    }
+
+.menu1 {
+    float: right;
+    margin: 0px;
+}
+
+    .menu1 > li {
+        font-size: 12px;
+        float: left;
+        margin: 0px;
+        padding: 10px 3px;
+        background-color: none;
+    }
+
+.sub1 {
+    background-color: #eee;
+    border: 1px solid grey;
+    margin: 5px 0 0 0px;
+    display: none;
+    z-index: 3;
+    position: relative;
+    line-height: 25px;
+}
+
+    .sub1 > li {
+        transition: all 0.5s ease;
+    }
+
+/*로고, 검색창, 광고창*/
+#head {
+    float: left;
+    width: 100%;
+    background-color: none;
+    height: 100px;
+}
+
+    #head > #headwrap {
+        width: 1260px;
+        background-color: none;
+        height: 100px;
+    }
+
+        #head > #headwrap > #logo {
+            float: left;
+            width: 280px;
+            background-color: none;
+            height: 100px;
+        }
+
+    #head #headwrap #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #head > #headwrap > #searchwrap {
+        float: left;
+        margin: 0 0 0 100px;
+        width: 500px;
+        background-color: none;
+        height: 100px;
+    }
+
+        /*제대로 된 검색창 구현하기*/
+        #head > #headwrap > #searchwrap > #search {
+            width: 100%;
+            height: 70px;
+            background-color: none;
+        }
+
+            #head > #headwrap > #searchwrap > #search > .searchtext {
+                width: 450px;
+                font-size: 15px;
+                float: left;
+                margin: 35px 0 0 0px;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #EF554D;
+            }
+
+#search > button {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 35px 0 0 0px;
+    border: none;
+    border-bottom: 2px solid #EF554D;
+    background-color: white;
+    cursor: pointer;
+}
+
+    #search > button > img {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 0 0 0 -5px;
+    }
+
+#head > #headwrap > #searchwrap > #searchword {
+    width: 100%;
+    height: 30px;
+    background-color: none;
+}
+
+    #head > #headwrap > #searchwrap > #searchword > ul > li {
+        float: left;
+        margin: 0 10px 0 0px;
+    }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li:first-of-type {
+            margin: 0 10px 0 10px;
+        }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li > a {
+            font-size: 10px;
+            color: black;
+        }
+
+#head > #headwrap > #banner {
+    float: right;
+    width: 250px;
+    margin: 15px 0 0 0px;
+    background-color: none;
+    height: 80px;
+}
+
+#banner > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*네비게이션*/
+#naviwrap {
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid black;
+    background-color: #EF554D;
+    font-weight: bold;
+    float: left;
+}
+
+    #naviwrap > #navigation {
+        width: 1260px;
+        height: 40px;
+        background-color: none;
+    }
+
+        #naviwrap > #navigation > .allnavi {
+            width: 200px;
+            float: left;
+            height: 38px;
+            background-color: #C12E27;
+            position: relative;
+        }
+
+.allnavi > a > i {
+    margin: 0 10px -5px 0px;
+}
+
+.allnavi > a {
+    width: 200px;
+    float: right;
+    margin: 8px 0 10px 0px;
+    background-color: none;
+    text-align: center;
+    color: #fff;
+}
+
+/*전체 카테고리 하위 네비*/
+
+#subcateg {
+    float: left;
+    width: 1260px;
+    height: auto;
+    margin: 38px 0 0 0px;
+    background-color: white;
+    border: 2px solid #C12E27;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+    #subcateg h2 {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    #subcateg ul {
+        float: left;
+    }
+
+        #subcateg ul li {
+            display: flex;
+            line-height: 25px;
+        }
+
+            #subcateg ul li a {
+                margin: 0 0 0 15px;
+                font-size: 12px;
+                color: grey;
+            }
+
+#subcateg1 {
+    float: left;
+    margin: 0 0 0 3px;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg2 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg3 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg4 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg5 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+}
+
+#naviwrap > #navigation > .navi1 {
+    width: 400px;
+    float: left;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi1 > ul {
+        margin: 0 0 0 30px;
+        float: left;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi1 > ul > li {
+            float: left;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi1 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+
+#naviwrap > #navigation > .navi2 {
+    width: 600px;
+    float: right;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi2 > ul {
+        margin: 0px;
+        float: right;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi2 > ul > li {
+            float: left;
+            margin: 0 20px 0 20px;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi2 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+/*슬라이드 광고*/
+#slidermap {
+    width: 100%;
+    float: left;
+    background-color: none;
+}
+
+#slider {
+    width: 1260px;
+    height: 400px;
+    background-color: none;
+}
+
+    #slider #sliderwrap {
+        float: left;
+        width: 1000px;
+        height: 400px;
+        background-color: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #slider #slideimg {
+        width: 4000px;
+    }
+
+#slideimg li {
+    width: 1000px;
+    height: 400px;
+    float: left;
+}
+
+    #slideimg li a img {
+        width: 100%;
+        height: 100%;
+    }
+
+#slider > #sliderlist {
+    float: right;
+    width: 260px;
+    height: 400px;
+    background-color: gray;
+}
+
+#sliderlist .rankdiv1 {
+    font-size: 12px;
+    text-align: center;
+}
+
+    #sliderlist .rankdiv1 a {
+        color: #fff;
+    }
+
+.rankdiv2 .rankmenu li {
+    float: left;
+    width: 130px;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.rankdiv3 ul li {
+    line-height: 40px;
+}
+
+.rankdiv4 ul li {
+    line-height: 40px;
+}
+
+.num {
+    margin: 0px 5px 0 10px;
+    font-weight: bold;
+}
+
+#uparrow {
+    color: red;
+}
+
+.spanwrap em {
+    margin: 0 10px 0 5px;
+}
+
+#downarrow {
+    color: blue;
+}
+
+#flat {
+    color: #ddd;
+    margin: 0 10px 0 0px;
+}
+
+.rankdiv4 {
+    display: none;
+}
+
+
+#slidernavimap {
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+}
+
+#mapwrap {
+    width: 1260px;
+    height: 50px;
+    background-color: none;
+}
+
+.slidernavi {
+    height: 50px;
+    width: 1000px;
+    float: left;
+    background-color: none;
+}
+
+    .slidernavi li {
+        background-color: none;
+        float: left;
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+/*본문*/
+section {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: none;
+}
+
+#section1 {
+    width: 1260px;
+    height: 800px;
+    background-color: none;
+}
+
+    #section1 #sidebanner {
+        width: 100px;
+        height: 330px;
+        margin: 0px 0 0 -120px;
+        padding: 0;
+        background-color: none;
+    }
+
+        #section1 #sidebanner #banner1 {
+            border: 1px solid #eee;
+            width: 100px;
+            height: 190px;
+            padding: 4px;
+            background-color: none;
+        }
+
+            #section1 #sidebanner #banner1 a #image1 {
+                width: 90px;
+                height: 150px;
+            }
+
+            #section1 #sidebanner #banner1 button {
+                font-size: 12px;
+                font-family: sans-serif;
+                font-weight: bold;
+                border: none;
+                background-color: #eee;
+                cursor: pointer;
+            }
+
+#banner1 #sidebprev {
+    margin: 0 0 0 20px;
+}
+
+#section1 #sidebanner #banner2 a img {
+    margin: 0 0 0 5px;
+}
+
+#section1 #sectionAD {
+    width: 1260px;
+    height: 80px;
+    float: left;
+    margin: -280px 0px 20px 0px;
+    background-color: none;
+}
+
+    #section1 #sectionAD .banner {
+        display: inline-block;
+        width: 350px;
+        height: 80px;
+        margin: 0 20px 0 40px;
+        background-color: none;
+    }
+
+        #section1 #sectionAD .banner a img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+/*컨텐츠 1*/
+
+#content1 {
+    width: 1260px;
+    height: 350px;
+    margin: -130px 0 0 0px;
+    background-color: none;
+}
+
+#recommend {
+        position: relative;
+        width: 860px;
+        height: 330px;
+        background-color: none;
+        border: 1px solid #eee;
+        float: left;
+        margin: -130px 0 0 60px;
+    }
+
+#recommendHeader h2 {
+            margin: -15px 0 0 330px;
+            text-align: center;
+            background-color: #fff;
+            width: 200px;
+        }
+
+#recommendHeader h2 i {
+    color: red;
+}
+
+
+#content1 #recommend #recommendHeader > a {
+    margin: -35px 15px 0 0px;
+    float: right;
+    font-size: 12px;
+}
+
+#content1 #recommend #recommendwrap {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+/* 컨텐츠 1 slide*/
+#recommendslide li img {
+    width: 180px;
+    height: 240px;
+    float: left;
+    margin: 40px 10px 40px 10px;
+}
+
+#recommendslide li h3 {
+    float: left;
+    margin: 50px 0 0 20px;
+}
+
+#recommendslide li h5 {
+    float: left;
+    margin: 85px 0 0 -100px;
+    background-color: none;
+}
+
+#recommendslide li p {
+    float: left;
+    width: 350px;
+    margin: 40px 0 0 20px;
+}
+
+#recommend span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin:0 5px 0px 5px;
+    font-size: 25px;
+    color: black;
+    line-height: 40px;
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+/*slide 버튼*/
+.prev0 {
+    left: 0;
+    padding: 0;
+}
+
+.next0 {
+    right: 0;
+    padding: 0;
+}
+
+#recommendslide {
+    width: 1800px;
+    height: 300px;
+    background-color: none;
+}
+
+    #recommendslide li {
+        float: left;
+    }
+
+        #recommendslide li:first-child {
+            width: 600px;
+            height: 300px;
+            background-color: none;
+        }
+
+        #recommendslide li:nth-child(2) {
+            width: 600px;
+            height: 300px;
+            background-color: none;
+        }
+
+        #recommendslide li:last-child {
+            width: 600px;
+            height: 300px;
+            background-color: none;
+        }
+
+/*트렌트 & 이슈*/
+#content1 #trend {
+    width: 250px;
+    height: 350px;
+    background-color: #eee;
+    float: right;
+    margin: -150px 60px 0 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#content1 #trend a img {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid black;
+    }
+
+#content2 {
+    width: 1260px;
+    height: 620px;
+    background-color: none;
+    margin: -250px auto 0 auto;
+}
+
+/*출판사 추천*/
+
+#content2 #pubchoice {
+        width: 420px;
+        background-color: none;
+        height: 380px;
+        margin: 0 20px 0 80px;
+        float: left;
+    }
+
+
+#content2 #pubchoice a img {
+            width: 420px;
+            height: 350px;
+            border: 1px solid #eee;
+        }
+
+    /*미디어 추천*/
+
+#content2 #mediachoice {
+        width: 380px;
+        background-color: none;
+        height: 380px;
+        float: left;
+    }
+
+#mediawrap {
+    width: 380px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mediaslide {
+    width: 1140px;
+    height: 350px;
+    background-color: none;
+}
+
+    .mediaslide li {
+        width: 380px;
+        height: 370px;
+        float: left;
+    }
+
+        .mediaslide li img {
+            width: 380px;
+            height: 350px;
+            border: 1px solid #eee;
+            float: left;
+        }
+
+#mediawrap span {
+    position: absolute;
+    top: 50%;
+    margin:0 5px 0 5px;
+    display: block;
+    font-size: 25px;
+    color: black;
+    line-height: 40px;
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+/*미디어 추천 slide 버튼*/
+.prev1 {
+    left: 0;
+    padding: 0;
+}
+
+.next1 {
+    right: 0;
+    padding: 0;
+}
+
+/*이 책 어때*/
+#whynot {
+    width: 220px;
+    background-color: none;
+    height: 380px;
+    margin: 2px 0 0 30px;
+    float: left;
+}
+
+#whynotslide {
+    width: 220px;
+    height: 380px;
+    position: relative;
+}
+
+    #whynotslide a img {
+        width: 220px;
+        height: 380px;
+        float: left;
+    }
+
+    #whynotslide button {
+        position: absolute;
+        top: 50%;
+        display: block;
+        font-size: 30px;
+        color: black;
+        line-height: 40px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        height: 50px;
+        transform: translateY(-30%);
+    }
+
+    /*이 책 어때 slide 버튼*/
+#prev2 {
+    left: 0;
+    padding: 0;
+}
+
+#next2 {
+    right: 0;
+    padding: 0;
+}
+
+/*광고 이미지*/
+#logindiv {
+    margin: 30px 0 0 130px;
+    float: left;
+}
+
+#content3 {
+    width: 1260px;
+    height: 400px;
+    background-color: none;
+}
+
+/*분야별 추천*/
+#recommendHeader2 h2 {
+    background-color: none;
+}
+
+    #recommendHeader2 h2 span {
+        color: red;
+    }
+
+#content3 #recommend2 #recommendHeader2 {
+    text-align: center;
+    width: 150px;
+    background-color: none;
+}
+
+#recommendwrap2 {
+    border-top: 2px solid black;
+    float: left;
+    width: 1260px;
+    height: 350px;
+    background-color: none;
+}
+
+/*분야별 추천 도서 API*/
+#booklist {
+    background-color: none;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+    #booklist li {
+        float: left;
+        height: 40px;
+        text-align: center;
+        background-color: none;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 5px 75px;
+        margin: 0 0 0 1px;
+        line-height: 30px;
+    }
+
+        #booklist li:hover {
+            border-bottom: 2px solid red;
+        }
+
+.box {
+    width: 180px;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin: 0px 0 0 25px;
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+}
+
+/*API 목록*/
+
+article {
+    padding: 40px 0 0 0px;
+}
+
+#list_a {
+    display: block;
+}
+
+#list_b {
+    display: none;
+}
+
+#list_c {
+    display: none;
+}
+
+#list_d {
+    display: none;
+}
+
+#list_e {
+    display: none;
+}
+
+#list_f {
+    display: none;
+}
+
+/*컨텐츠 4*/
+#content4 {
+    width: 1260px;
+    height: 650px;
+    background-color: none;
+}
+
+    /*중간 광고*/
+    #content4 > #sectionAD2 {
+        width: 1000px;
+        height: 100px;
+        background-color: none;
+        margin: 10px 0 0 130px;
+        float: left;
+    }
+
+        #content4 > #sectionAD2 > a > img {
+            width: 100%;
+            height: 100%;
+        }
+
+    /*이달의 책 */
+    #content4 > #monthly {
+        width: 400px;
+        height: 500px;
+        margin: 30px 10px;
+        float: left;
+        background-color: #eee;
+    }
+
+#monthly > h2 {
+    border-bottom: 2px solid black;
+    background-color: #fff;
+}
+
+    #monthly > h2 > span {
+        color: red;
+    }
+
+    #monthly > h2 > #more {
+        color: black;
+        float: right;
+        margin: 15px 0 0 0px;
+        font-size: 12px;
+    }
+
+.prev2 {
+    cursor: pointer;
+}
+
+.next2 {
+    cursor: pointer;
+    margin: 0 10px 0 0px;
+}
+
+#activebox {
+    width: 350px;
+    height: 440px;
+    margin: 10px 0 0 25px;
+    float: left;
+    background-color: none;
+    position: relative;
+    overflow: hidden;
+}
+
+#activeslide {
+    width: 1050px;
+    height: 440px;
+    background-color: none;
+}
+
+    #activeslide li {
+        width: 350px;
+        height: 440px;
+        float: left;
+        background-color: none;
+    }
+
+        #activeslide li .list1 {
+            width: 330px;
+            height: 210px;
+            background-color: none;
+            margin: 5px;
+        }
+
+li .list1 a img {
+    float: left;
+    width: 150px;
+    height: 180px;
+    margin: 10px 0 0 20px;
+}
+
+li .list1 h5 a {
+    font-size: 15px;
+    float: left;
+    margin: 80px 0 0 10px;
+}
+
+li .list1 h6 {
+    font-size: 13px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+/*CD*/
+#content4 > #cd {
+    width: 400px;
+    height: 500px;
+    margin: 30px 10px;
+    float: left;
+    background-color: #eee;
+}
+
+#cd h2 {
+    border-bottom: 2px solid black;
+    background-color: #fff;
+}
+
+    #cd h2 span {
+        float: right;
+        font-size: 12px;
+        margin: 15px 10px 0 0px;
+        cursor: pointer;
+    }
+
+/*dvd*/
+#content4 > #dvd {
+    width: 400px;
+    height: 500px;
+    margin: 30px 10px;
+    float: left;
+    background-color: #eee;
+}
+
+#dvd h2 {
+    border-bottom: 2px solid black;
+    background-color: #fff;
+}
+
+    #dvd h2 span {
+        float: right;
+        font-size: 12px;
+        margin: 15px 10px 0 0px;
+        cursor: pointer;
+    }
+
+.staticbox {
+    width: 380px;
+    height: 430px;
+    margin: 10px 0 0 10px;
+    background-color: none;
+    font-family: sans-serif;
+}
+
+    .staticbox .staticbox1 {
+        float: left;
+        background-color: none;
+        width: 140px;
+        height: 140px;
+        margin: 20px 5px 0 30px;
+    }
+
+        .staticbox .staticbox1 a img {
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0 20px;
+        }
+
+        .staticbox .staticbox1 h5 {
+            text-align: center;
+        }
+
+        .staticbox .staticbox1 h6 {
+            text-align: center;
+        }
+
+
+        .staticbox .staticbox1:first-child {
+            width: 300px;
+            height: 250px;
+            margin: 0 0 0 40px;
+        }
+
+            .staticbox .staticbox1:first-child a img {
+                width: 200px;
+                height: 200px;
+                margin: 0 0 0 50px;
+            }
+
+            .staticbox .staticbox1:first-child h5 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .staticbox .staticbox1:first-child h6 {
+                font-size: 15px;
+                text-align: center;
+                margin: 5px 0 0 0px;
+            }
+
+    .staticbox .staticbox2 {
+        float: left;
+        background-color: none;
+        width: 140px;
+        height: 140px;
+        margin: 20px 5px 0 30px;
+    }
+
+        .staticbox .staticbox2 a img {
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0 20px;
+        }
+
+        .staticbox .staticbox2 h5 {
+            text-align: center;
+        }
+
+        .staticbox .staticbox2 h6 {
+            text-align: center;
+        }
+
+
+        .staticbox .staticbox2:first-child {
+            width: 300px;
+            height: 250px;
+            margin: 0 0 0 40px;
+        }
+
+            .staticbox .staticbox2:first-child a img {
+                width: 200px;
+                height: 200px;
+                margin: 0 0 0 50px;
+            }
+
+            .staticbox .staticbox2:first-child h5 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .staticbox .staticbox2:first-child h6 {
+                font-size: 15px;
+                text-align: center;
+                margin: 5px 0 0 0px;
+            }
+
+#content5 {
+    width: 1260px;
+    height: 400px;
+    background-color: none;
+}
+
+#banner4 {
+    background-color: none;
+    margin: 0 0 50px;
+}
+
+    #banner4 a:first-child {
+        margin: -15px 0 0 150px;
+    }
+
+    #banner4 a img {
+        margin: -15px 0 0 0px;
+    }
+
+#benefit {
+    background-color: none;
+}
+
+    #benefit h2 {
+        border-bottom: 2px solid black;
+        margin: 0 0 20px 0px;
+    }
+
+    #benefit ul {
+        float: left;
+        background-color: none;
+        margin: 0 130px 0 0px;
+    }
+
+        #benefit ul li {
+            line-height: 30px;
+            font-size: 12px;
+        }
+
+            #benefit ul li:first-child {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            #benefit ul li a {
+                font-size: 12px;
+                color: grey;
+            }
+
+#banner5wrap {
+    width: 100%;
+    height: auto;
+    background-color: #58D0C7;
+}
+
+#banner5 {
+    width: 1260px;
+    background-color: #58D0C7;
+}
+
+    #banner5 div {
+        width: 520px;
+        background-color: #58D0C7;
+        padding: 20px;
+        display: inline-block;
+        font-weight: bold;
+        color: white;
+    }
+
+.banner5_1 {
+    margin: 0 0 0 100px;
+    border-right: 1px solid #fff;
+}
+
+#banner5 a span {
+    color: yellow;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    float: left;
+    background-color: #eee;
+}
+
+#footerbox {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+#footerlist {
+    width: 1260px;
+    height: 50px;
+    background-color: none;
+}
+
+    #footerlist ul li {
+        float: left;
+        margin: 20px 20px 0 0px;
+        font-size: 13px;
+        color: grey;
+    }
+
+        #footerlist ul li a {
+            color: grey;
+        }
+
+    #footerlist > ul > li:first-child > a {
+        color: black;
+        font-weight: bold;
+    }
+
+#info {
+    width: 1260px;
+    height: auto;
+}
+
+    #info .specific {
+        width: 410px;
+        height: 100px;
+        float: left;
+        margin: 10px 0 30px 10px;
+        background-color: none;
+        border-right: 1px solid grey;
+    }
+
+        #info .specific:last-of-type {
+            border-right: none;
+        }
+
+        #info .specific h6 {
+            font-size: 13px;
+        }
+
+        #info .specific li {
+            margin: 0 0 0 10px;
+            font-size: 12px;
+            line-height: 30px;
+            color: grey;
+        }
+
+    #info p span {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #info p {
+        font-size: 12px;
+        color: grey;
+        margin: 0 0 30px 0px;
+    }

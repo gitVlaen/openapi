@@ -1,0 +1,929 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>인터파크 도서</title>
+
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="js/sub/header.js"></script>
+    <script src="js/sub/purchase_info.js"></script>
+    <script src="js/sub/quickmenu.js"></script>
+    <script src="js/sub/indexflip.js"></script>
+    <script src="js/sub/author_other.js"></script>
+    <script src="js/sub/recommend_book.js"></script>
+    <script src="js/sub/review_toggle.js"></script>
+    <script src="js/sub/starrating.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <!--광고창, 사이트링크, 로그인 창-->
+        <div id="topbanner">
+            <a href="#"><img src="img/topbanner1.jpg" alt="광고이미지" /></a>
+            <a href="#"><img src="img/topbanner2.jpg" alt="광고이미지" /></a>
+            <button id="closebtn1">X</button>
+        </div>
+
+        <!--네비 하위 항목-->
+        <div id="topwrap">
+            <div id="gateicon">
+                <div id="gatebtn">
+                    <ul>
+                        <li><a href="#">Main</a></li>
+                        <li><a href="index.html">도서</a></li>
+                        <li><a href="#">공연</a></li>
+                        <li><a href="#">여행</a></li>
+                    </ul>
+                </div>
+                <div id="loginlist">
+                    <ul class="menu1">
+                        <li><a href="#">로그인</a></li>
+                        <li> | </li>
+                        <li><a href="#">회원가입</a></li>
+                        <li> | </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                            <ul class="sub1">
+                                <li><a href="#">주문내역</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li><a href="#">회원정보</a></li>
+                            </ul>
+                        </li>
+                        <li> | </li>
+                        <li><a href="#">고객센터</a></li>
+                        <li> | </li>
+                        <li>
+                            <a href="#">Language</a>
+                            <ul class="sub1">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--로고, 검색창, 광고창-->
+        <div id="head">
+            <div id="headwrap">
+                <div id="logo">
+                    <a href="index.html"><img src="img/logo.jpg" alt="로고 이미지" /></a>
+                </div>
+
+                <div id="searchwrap">
+                    <div id="search">
+                        <input type="search" class="searchtext" placeholder="<<무지개 물고기>> 30주년 신작" />
+                        <button><img src="img/search_icon.jpg" alt="검색버튼" /></button>
+                    </div>
+                    <div id="searchword">
+                        <ul>
+                            <li><a href="#">흔한남매 과학</a></li>
+                            <li>|</li>
+                            <li><a href="#">예의와 무례</a></li>
+                            <li>|</li>
+                            <li><a href="#">척추의 신</a></li>
+                            <li>|</li>
+                            <li><a href="#">살아남은 패자</a></li>
+                            <li>|</li>
+                            <li><a href="#">천선란 소설</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                </script>
+
+                <div id="banner">
+                    <a href=""><img src="img/topbanner3.jpg" alt="" /></a>
+                </div>
+            </div>
+
+            <!--네비창-->
+            <div id="naviwrap">
+                <div id="navigation">
+                    <div class="allnavi">
+                        <a href="#"><i class="fas fa-bars"></i>전체 카테고리</a>
+                        <!--전체 네비의 하위 항목-->
+                        <div id="subcateg">
+                            <div id="subcateg1">
+                                <h2>국내도서</h2>
+                                <ul>
+                                    <li><a href="#">소설</a></li>
+                                    <li><a href="#">장르소설</a></li>
+                                    <li><a href="#">시.수필</a></li>
+                                    <li><a href="#">경제경영</a></li>
+                                    <li><a href="#">자기계발</a></li>
+                                    <li><a href="#">사회과학</a></li>
+                                    <li><a href="#">역사.문화</a></li>
+                                    <li><a href="#">예술.대중문화</a></li>
+                                    <li><a href="#">인문</a></li>
+                                    <li><a href="#">자연.과학</a></li>
+                                    <li><a href="#">종교.역학</a></li>
+                                    <li><a href="#">유아.아동</a></li>
+                                    <li><a href="#">초등학습</a></li>
+                                    <li><a href="#">중등학습</a></li>
+                                    <li><a href="#">고등학습</a></li>
+                                    <li><a href="#">가정과생활</a></li>
+                                    <li><a href="#">국어.외국어사전</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li><a href="#">자격서.수험서</a></li>
+                                    <li><a href="#">컴퓨터.인터넷</a></li>
+                                    <li><a href="#">전공.대학교재</a></li>
+                                    <li><a href="#">잡지</a></li>
+                                    <li><a href="#">만화.라이트노벨</a></li>
+                                    <li><a href="#">예약판매</a></li>
+                                </ul>
+                            </div>
+                            <div id="subcateg2">
+                                <h2>외국도서</h2>
+                                <ul>
+                                    <li><a href="#">어린이</a></li>
+                                    <li><a href="#">문학</a></li>
+                                    <li><a href="#">ELT.사전</a></li>
+                                    <li><a href="#">컴퓨터</a></li>
+                                    <li><a href="#">경제.인문</a></li>
+                                    <li><a href="#">실용.예술</a></li>
+                                    <li><a href="#">대학.전문서적</a></li>
+                                    <li><a href="#">해외잡지</a></li>
+                                    <li><a href="#">예약판매</a></li>
+                                    <li><a href="#">번역서</a></li>
+                                </ul>
+                            </div>
+                            <div id="subcateg3">
+                                <h2>음반</h2>
+                                <ul>
+                                    <li><a href="#">가요</a></li>
+                                    <li><a href="#">팝</a></li>
+                                    <li><a href="#">클래식</a></li>
+                                    <li><a href="#">국악</a></li>
+                                    <li><a href="#">일본음악</a></li>
+                                    <li><a href="#">락</a></li>
+                                    <li><a href="#">뉴에이지</a></li>
+                                    <li><a href="#">재즈</a></li>
+                                    <li><a href="#">해외구매</a></li>
+                                    <li><a href="#">OST</a></li>
+                                    <li><a href="#">종교</a></li>
+                                    <li><a href="#">예약판매</a></li>
+                                    <li><a href="#">LP</a></li>
+                                </ul>
+                            </div>
+                            <div id="subcateg4">
+                                <h2>DVD</h2>
+                                <ul>
+                                    <li><a href="#">블루레이</a></li>
+                                    <li><a href="#">EBS교육</a></li>
+                                    <li><a href="#">영화</a></li>
+                                    <li><a href="#">다큐멘터리</a></li>
+                                    <li><a href="#">TV시리즈</a></li>
+                                    <li><a href="#">애니메이션</a></li>
+                                    <li><a href="#">해외구매</a></li>
+                                </ul>
+                            </div>
+                            <div id="subcateg5">
+                                <h2>굿즈</h2>
+                                <ul>
+                                    <li><a href="#">문구/팬시</a></li>
+                                    <li><a href="#">사무용품</a></li>
+                                    <li><a href="#">학습</a></li>
+                                    <li><a href="#">독서용품</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navi1">
+                        <ul>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">신간도서</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">정기인하</a></li>
+                        </ul>
+                    </div>
+                    <div class="navi2">
+                        <ul>
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">해외도서</a></li>
+                            <li><a href="#">eBook</a></li>
+                            <li><a href="#">중고</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <!--하위 네비-->
+        <div id="subnavi">
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li>&gt;</li>
+                <li><a href="#">국내도서</a></li>
+                <li>&gt;</li>
+                <li><a href="#">소설</a></li>
+                <li>&gt;</a></li>
+                <li><a href="#">외국소설</a></li>
+                <li>&gt;</li>
+                <li><a href="#">영미소설</a></li>
+            </ul>
+        </div>
+
+        <!--도서상품 제목-->
+        <div id="booktitle">
+            <h3></h3>
+        </div>
+
+        <!--도서개요-->
+        <div id="itemwindow">
+            <div id="item">
+                <div id="itemimg"></div>
+                <div id="itembtn">
+                    <button><i class="fas fa-search"></i> 크게보기</button>
+                    <button><i class="fas fa-book-open"></i> 미리보기</button>
+                </div>
+                <div class="itembox">
+                    판매지수 <span>97</span>
+                </div>
+                <div class="itembox">
+                    공유하기 <img src="" /><img src="" />
+                </div>
+            </div>
+
+            <!--상품구매표-->
+            <div id="itemtable">
+                <table>
+                    <tr>
+                        <td>
+                            <ul id="bookinfo">
+                                <li></li>
+                                <li>|</li>
+                                <li></li>
+                                <li>|</li>
+                                <li></li>
+                                <li>|</li>
+                                <li></li>
+                                <li>|</li>
+                                <li></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>정가</td>
+                        <td class="pricenum"></td>
+                    </tr>
+                    <tr>
+                        <td>할인혜택</td>
+                        <td>
+                            <ul>
+                                <li><a href="#">카드/간편결제확인 &gt;</a></li>
+                                <li>|</li>
+                                <li><a href="#">무이자 할부 &gt;</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>적립혜택</td>
+                        <td>
+                            <ul>
+                                <li><span class="point">2400</span> (5% 적립)</li>
+                                <li>|</li>
+                                <li><a href="#"><span class="point2">5만원이상 주문시 2천P + 등급별 최대 1.5%적립</span> &gt;</a></li>
+                                <br />
+                                <li>L-Point 적립은 마이페이지에서 직접 <span class="point3">구매확정</span>하신 경우만 적립됩니다.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            추가혜택
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#"><img src="img/sub/AD_img1.jpg" /></a></li>
+                                <li>|</li>
+                                <li><a href="#"><img src="img/sub/AD_img2.jpg" /></a></li>
+                                <li>|</li>
+                                <li><a href="#"><img src="img/sub/AD_img3.jpg" /></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이달의 혜택 모음 <span>도서상품권 혜택받기</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            배송정보
+                        </td>
+                        <td>
+                            <ul>
+                                <li>7/13(수)이내 발송 예정 ex (서울시 강남구 삼성로 512)</li>
+                                <li>|</li>
+                                <li>무료배송</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>주문수량</td>
+                        <td>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>장바구니 담기</button>
+                            <button>즉시구매</button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--좌측 광고창-->
+        <div id="advertise">
+            <div id="sidead">
+                <div id="banner1">
+                    <a href="#"><img id="image1" src="img/banner5.jpg" alt="광고이미지 1" /></a>
+                    <button id="sidebprev">&lt;</button>
+                    <button id="sidebnext">&gt;</button>
+                </div>
+
+                <div id="banner2">
+                    <a href="#"><img src="img/banner4.jpg" alt="광고이미지 2" /></a>
+                </div>
+            </div>
+
+            <!--우측 퀵메뉴-->
+            <div class="quickmenu">
+                <ul>
+                    <li><a href="#bookintro">책정보</a></li>
+                    <li><a href="#event1">이벤트 기획전</a></li>
+                    <li><a href="#innerbox2">추천도서</a></li>
+                    <li><a href="#review">리뷰/한줄평</a></li>
+                    <li><a href="#change">교환/환불/배송</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="content1">
+            <div id="sublist">
+                <ul>
+                    <li><a href="#bookintro">책소개</a></li>
+                    <li><a href="#event1">이벤트 기획전</a></li>
+                    <li><a href="#innerbox2">추천도서</a></li>
+                    <li><a href="#review">기대평/리뷰</a></li>
+                    <li><a href="#change">교환/환불/배송</a></li>
+                </ul>
+            </div>
+
+            <!--상품의 분류-->
+            <div id="itemsort">
+                <h2>이 상품의 분류</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>&gt</li>
+                    <li>도서</li>
+                    <li>&gt</li>
+                    <li>소설</li>
+                    <li>&gt</li>
+                    <li>외국소설</li>
+                    <li>&gt</li>
+                    <li>영미소설</li>
+                </ul>
+            </div>
+
+            <!--책소개-->
+            <div id="bookintro" name="bookintro">
+                <h2>책소개</h2>
+                <p>
+                    1904년 6월 16일 하루의 기록을 담은 작품 『율리시스』는 평범한 광고회사 외판원이자 한 집안의 가장인 리오폴드 블룸과 그의 아내 몰리 블룸,
+                    그리고 한 젊은 예술가 스티븐 데덜러스의 일상 속 의식의 방황을 다룬다. 현대인을 각기 대변하는 세 사람을 통해 현대문명의 총체적 모습을
+                    적나라하게 보여준다.
+                </p>
+            </div>
+
+            <!--출판사 서평-->
+            <div id="bookcomment">
+                <h2>출판사 서평</h2>
+                <h4>
+                    인간 의식의 백과사전
+                    사랑의 찬가이자 희비극적 코미디
+                    『율리시스』 제4개역판 출간
+                </h4>
+                <p>
+                    20세기 최대의 작품으로 꼽히는 『율리시스』는 1904년 6월 16일 하루의 기록이다. 평범한 광고회사 외판원이자 한 집안의 가장인 리오폴드 블룸과
+                    그의 아내 몰리 블룸, 그리고 한 젊은 예술가 스티븐 데덜러스의 일상 속 의식의 방황을 다룬다. 현대인을 각기 대변하는 세 사람을 통해 현대문명의
+                    총체적 모습을 적나라하게 보여준다. 조이스는 『율리시스』에 3만 여 개(정확히는 29,899자)의 어휘를 사용하여, 셰익스피어 이후 가장 풍부한 어휘를
+                    구사했다. 현란한 언어유희와 시적 추상, 유머와 절망이 어우러진 이 작품은 그 속에 담긴 수많은 의미와 상징으로 풍부한 이야기를 담아내는 한편,
+                    여전히 풀리지 않는 수수께끼를 안고 있어 끊임없이 새로운 연구의 대상이 되고 있다. 『율리시스』는 1920년대 초 출간 후 10여 년간 "외설스럽다"는
+                    이유로 판금 조치를 당했던 작품이다. 하지만 오늘날의 『율리시스』는 "모더니즘의 기원"이라는 격찬을 받고 있다.
+                </p>
+
+                <h4>
+                    가장 난해한 작가이자 20세 문학의 틀을 깨뜨린 실험적 작가, 제임스 조이스
+                </h4>
+                <p>
+                    세계 문학사에서 제임스 조이스 문학의 위상은 가히 놀랄 만하다. 그는 아일랜드 출신으로 국외를 망명하며 문제적 작품들을 수없이 내놓았다.
+                    대표작 『율리시스』는 음란출판물로 판정받아 연재가 중단되기도 하는 우여곡절을 겪었지만 세상에서 가장 많은 논문이 쓰인 소설이 되었다.
+                    또한 제임스 조이스 산업까지 탄생시켰다. 조이스는 다양한 언어, 문학, 철학, 역사에 통달하였으며 이러한 박식함이 작품에도 녹아 내려가
+                    그의 작품만 연구하는 수많은 학자들을 배출하였다. 율리시스는 현대문학에 가장 강력한 영향력을 행사함으로써 인류의 감정, 문화 사조 및
+                    그 자체를 그토록 변경시켜 놓은 것도 없을 정도로 문학의 새 방향을 제시한 상징적 존재가 되고 있다. “나는 너무나 많은 수수께끼를 이 작품에
+                    도입했기에 앞으로 수세기 동안 대학교수들은 바쁠 것이다”라고 한 조이스의 말처럼 『율리시스』는 들어가기도 어렵고 빠져나오기도 어렵다.
+                </p>
+            </div>
+
+            <!--목차-->
+            <div id="bookindex">
+                <h2>목차</h2>
+                <div id="indexwrap">
+                    <p>
+                        <ul>
+                            <li class="chapter">제1부</li>
+
+                            <li>제1장 탑(텔레마코스[Telemachus] 에피소드)</li>
+                            <li>제2장 달키의 초등학교(네스토르[Nestor] 에피소드)</li>
+                            <li>제3장 샌디마운트 해변(프로테우스[Proteus] 에피소드)</li>
+                        </ul>
+
+                        <ul>
+                            <li class="chapter">제2부</li>
+
+                            <li>제4장 이클레스가 7번지(칼립소[Calypso] 에피소드)</li>
+                            <li>제5장 목욕탕(로터스-이터즈[Lotus-Eaters] 에피소드)</li>
+                            <li>제6장 장례 행렬과 묘지(하데스[Hades] 에피소드)</li>
+                            <li>제7장 신문사(아이올러스[Aeolus] 에피소드)</li>
+                            <li>제8장 더블린 시 한복판(레스트리고니언즈[Lestrygonians] 에피소드)</li>
+                            <li>제9장 국립도서관(스킬라와 카립디스[Scylla and Charybdis] 에피소드)</li>
+                            <li>제10장 거리(배회하는 바위들[The Wandering Rock] 에피소드)</li>
+                            <li>제11장 오먼드 호텔(세이렌[Sirens] 에피소드)</li>
+                            <li>제12장 바니 키어넌 주점(키클롭스[Cyclops] 에피소드)</li>
+                            <li>제13장 샌디마운트 해변(나우시카[Nausicaa] 에피소드)</li>
+                            <li>제14장 홀레스가의 산부인과 병원(태양신의 황소들[Oxen of the Sun] 에피소드)</li>
+                            <li>제15장 밤의 거리(키르케[Circe] 에피소드)</li>
+                        </ul>
+                        <ul>
+                            <li class="chapter">3부</li>
+
+                            <li>제16장 역마차의 오두막(에우마이오스[Eumaeus] 에피소드)</li>
+                            <li>제17장 이클레스가 7번지(이타카[Ithaca] 에피소드)</li>
+                            <li>제18장 침실(페넬로페[Penelope] 에피소드)</li>
+                        </ul>
+
+                        <ul>
+                            <li class="chapter">주석</li>
+                        </ul>
+                        <ul>
+                            <li>부록</li>
+                            <li>1. 주요 등장인물 일람</li>
+                            <li>2. 이야기 줄거리</li>
+                            <li>3. 작품 구도</li>
+                            <li>4. 『율리시스』판본사</li>
+                            <li>5. 조이스 연</li>
+                        </ul>
+                    <p>
+                </div>
+                <button id="indbtn" onclick="indexflip()">펼치기</button>
+            </div>
+
+            <!--저자소개-->
+            <div id="authorinfo">
+                <h2>저자소개</h2>
+                <h3>제임스 조이스(저)</h3>
+                <table>
+                    <tr>
+                        <td>생년월일(18820202)</td>
+                        <td>
+                            1882년 아일랜드에서 태어났다. 여섯 살에 예수회가 경영하는 클롱고우스 우드 기숙학교에 입학했다.
+                            그러나 가세가 기울어 서민적인 예수회 계통 학교인 더블린의 벨비디어 학교로 옮긴다.
+                            1898년 열여섯 살 때부터 1902년 스무 살 때까지 더블린의 유니버시티 칼리지를 다녔고 1902년에 현대어문학 전공으로 학사학위를 받았다.
+                            대학에서 그는 철학과 언어를 공부했으며, 1900년 아직 대학생이었던 무렵, 노르웨이의 극작가 입센의 마지막 연극에 관한 긴 논문을
+                            '포트나이트리 리뷰'지에 발표했다. 당시 그는 서정시를 쓰기 시작했는데, 이는 나중에 '실내악'이라는 제 목의 시집으로 출간되었다.
+                            그 후 의학공부를 하러 파리로 떠났다가 1904년 어머니의 병환 때문에 일시 귀국하지만 그해 노라 바나클이라는 여인과 함께 다시 유럽 대륙으로 떠났다.
+                            그들은 1931년 정식으로 결혼했다. 1905년부터 1915년까지 그들은 이탈리아의 트리에스테에서 함께 살았으며 조이스는 그곳의 벨리츠 학교에서
+                            영어를 가르쳤다. 1909년과 1912년에 그는 마지막으로 아일랜드를 방문했는데, 이는 '더블린 사람들'의 출판을 주선하기 위해서였다.
+                            이 작품은 1914년 영국에서 마침내 출판되었다. 1915년 한 해 동안 조이스는 그의 유일한 희곡 '망명자들'을 썼다. '젊은 예술가의 초상'은
+                            1916년에 출간되었다. 같은 해 조이스와 그의 가족은 스위스의 취리히로 이사했으며 조이스가 '율리시스'를 작업하는 동안 그들은 심한 재정적
+                            빈곤을 겪어야 했다. 연재는 1918년에 시작되었으나 작품의 외설로 인한 시비와 고소로 1920년에 중단되었다. '율리시스'는 1922년 파리에서
+                            단행본으로 출판되었으며 조이스 가족은 세계 양차대전 기간 동안 그곳에 체류했다. 1939년에 '피네간의 경야'가 출간되었고, 이어 조이스 가족은
+                            스위스로 되돌아갔다. 두 달 뒤, 1941년 1월에 조이스는 장 궤양으로 사망했다. '초상'의 초고의 일부인 '영웅 스티븐'이 1944년 저자의 사후에 출간되었다.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--상품정보제공시-->
+            <div id="iteminfo">
+                <h2>상품정보제공시</h2>
+                <table>
+                    <tr>
+                        <td>저자</td>
+                        <td>제임스 조이스</td>
+                        <td>기획사/제작사</td>
+                        <td>어문학사</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN</td>
+                        <td>9788961844147(8961844148)</td>
+                        <td>쪽수</td>
+                        <td>960쪽</td>
+                    </tr>
+                    <tr>
+                        <td>크기</td>
+                        <td>152*225*40</td>
+                        <td>제품구성</td>
+                        <td>공급업체 특성상 정보확인이 어려우니, 정확한 정보를 확인하시려면 1:1문의게시판을 이용 바랍니다.</td>
+                    </tr>
+                    <tr>
+                        <td>발행일(출간일)</td>
+                        <td>2016년 07월25일</td>
+                        <td>목차 및 책소개</td>
+                        <td>상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="otherbook">
+                <h2>저자의 다른 책</h2>
+                <div id="contentbox">
+                    <div class="innerbox1"></div>
+                    <div class="innerbox1"></div>
+                    <div class="innerbox1"></div>
+                    <div class="innerbox1"></div>
+                    <div class="innerbox1"></div>
+                    <div class="innerbox1"></div>
+                </div>
+            </div>
+
+            <!--이벤트 기획전-->
+            <div id="event1" name="event1">
+                <h2>이벤트 기획전</h2>
+                <a href="#"><img src="./img/sub/event1.jpg" /></a>
+            </div>
+        </div>
+
+        <!--추천도서-->
+        <div id="content2">
+            <div id="recommend">
+                <h2>추천도서</h2>
+                <div class="recbox">
+                    <h4 class="inboxtitle"> · 소설 분야에서 많은 회원이 구매한 책</h4>
+                    <div id="innerbox2" name="innerbox2">
+                        <div class="contentbox1"></div>
+                        <div class="contentbox1"></div>
+                        <div class="contentbox1"></div>
+                        <div class="contentbox1"></div>
+                        <div class="contentbox1"></div>
+                        <div class="contentbox1"></div>
+                    </div>
+                    <h4 class="inboxtitle">· 이 책을 조회한 회원들이 같이 본 책</h4>
+                    <div id="innerbox3">
+                        <div class="contentbox2"></div>
+                        <div class="contentbox2"></div>
+                        <div class="contentbox2"></div>
+                        <div class="contentbox2"></div>
+                        <div class="contentbox2"></div>
+                        <div class="contentbox2"></div>
+                    </div>
+                    <h4 class="inboxtitle">· 이 책을 구매한 회원들이 같이 본 책</h4>
+                    <div id="innerbox4">
+                        <div class="contentbox3"></div>
+                        <div class="contentbox3"></div>
+                        <div class="contentbox3"></div>
+                        <div class="contentbox3"></div>
+                        <div class="contentbox3"></div>
+                        <div class="contentbox3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--리뷰-->
+        <div id="content3">
+            <div id="review" name="review">
+                <h2>리뷰 <button>리뷰쓰기</button></h2>
+                <div id="timeline">
+                    <ul id="btn1">
+                        <li><a href="#">최근순</a></li>
+                        <li>|</li>
+                        <li><a href="#">추천순</a></li>
+                    </ul>
+                </div>
+                <div id="reviewbox">
+                    <div id="innerreview">
+                        <div id="reviewtitle">
+                            <h5>
+                                [율리시스]Ulysses
+                            </h5>
+                            <ul>
+                                <li>coa***</li>
+                                <li>|</li>
+                                <li>2022/07/19</li>
+                            </ul>
+                        </div>
+<pre>
+
+  ▶저자인 조이스는 어떤 마음으로 그리스 고전에서의 주요 인물들을 차용해서 현대적인 시각으로 인간의 본질을 파악하려 했는가? 
+  개인적인 생각에 페이지뷰에서부터 심리를 압박하며 인간을 괴롭히는 책으로 자타가 공인하는 율리시즈는 정신공간속에 문듯 심리적 낮 섬과 
+  어떤공간에서든 밀려오는 시공간적 이방성, 그리고 인간의 밑 면에 감춰진 원초적인 본능이 내용과 직접적인 관련이 있지 않을까라는 생각을 해봤다. 
+  우린 삶속에서 간혹 친근하고 마음이 통하는 사람에게조차 때론 낮설음을 느끼고 때로 사랑하는 사람과 함께여도 심연깊히 잔재하는 
+  외로움이 가슴을 서늘케 한다. 그런 심리적 공간적인 의식의 흐름 자체를 글로 옮긴 소설이기에 읽는이를 얼마나 곤혹스럽게 하는지 알만하다. 
+
+  본문은 1904년 6월 16일 하루동안, 주인공 세사람인 "스티븐 디덜러스와 레오폴드 블룸, 그리고 블룸의 부인 마리언 블룸"이 시공간을 배경으로 
+  의식과 무의식을 더듬으며 엮어가는것으로 총 제 1, 2, 3부 별 각각 3개, 12개, 3개인 총 18개 에피소드로 구성돼  소위 요즘 표현으로 공간을 초월한 
+  사랑방 좌담회를 현재와 과거를 추억하는 것이다.
+
+  개인적으로 아주 예전 읽은 기억으로 재미는 별로였다는 기분이 아직도 기억속에 남아있는 "젊은 에술가의 초상"의 등장인물인 이름이 이랬던가 
+  싶은, 기억에는 없지만 스티븐 디덜러스가 재 등장하면서 알려진바로 "더블린 3부작"으로 불리우는 "더블린 사람들, "젊은 예술가의 초상, 율리시스, 각 공히 그렇다.
+
+  ▶율리시즈Ulysses는 아다시피 호메로스Homeros의 "오디세우스의 노래"라는 뜻인 오디세이아의 그리스식 표현인 오디세우스의 로마식 표기라는 
+  사실은 익히 알려진 바 최근 어문학사에서 야심차게 준비한 어마어마한 페이지뷰를 자랑하고 있는 제4개역판을 우연한 기회에 출판사에서 보내줘 
+  득템하게 됐다. 이런 난해스럽고 테이크 아웃하기도 어려운 책에 지갑을 열 수 있는 사람이 국내에 몇이나 될까를 생각하면 출판인으로서 소신과 
+  소명과 철학에 존경이 앞선다. 거기다 첫장을 넘기기가 솔직히 엄두가 나지않는..., 논문을 쓸려면 모를까 부담감이 앞서는 바람에 책상 한쪽이 쌓아 
+  뒀다가 두께와 저자의 명성에 눌려있다가는 영영 보지못할법 하지만 책에 대한 예의가 아니기도 했지만 무엇보다도 세안후에 찾는 스킨화장품명이 
+  오디세이인 바람에 매번 언제나 읽을지 난감해하던 차에 서두만이라도 펼치게 됐다. 일리아드Iliad의 후편에 속하는 오디세이는 이타카의 왕 
+  오디세우스가  "증오받은 자"라는 말뜻처럼 그리스와 트로이간의 전쟁을 승리로 이끌고 귀향하는 길에 겪게되는 20여년간의 모험담이다. 
+  그야말로 "증오받은 자"와같은 방랑기처럼 말이다.
+
+</pre>
+                    </div>
+                </div>
+                <div id="reviewbottom">
+                    <div id="bottom1">
+                        <ul>
+                            <li><a href="#">댓글</a>(0)</li>
+                            <li>|</li>
+                            <li><a href="#">추천</a>(0)</li>
+                            <li>|</li>
+                            <li><a href="#"><i class="fa fa-thumbs-up"></i></a></li>
+                        </ul>
+                        <button id="revbtn" onclick="revflip()">펼치기</button>
+                    </div>
+                    <div class="botpagemove">
+                        <ul>
+                            <li><a href="#">&lt;&lt; 처음으로</a></li>
+                            <li><a href="#">&lt; 이전</a></li>
+                            <li>1</li>
+                            <li><a href="#">다음 &gt;</a></li>
+                            <li><a href="#">끝으로 &gt;&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+
+            <!--한줄평-->
+            <div id="comment">
+                <h2>한줄평</h2>
+                <div id="commentbox">
+
+                    <div id="comment1">
+                        <div class="star_rate">
+                            <span>평점</span>
+                            <span class="star">
+                                ★★★★★
+                                <span>★★★★★</span>
+                                <input type="range" oninput="starrating(this)" value="1" step="1" min="0" max="10">
+                            </span>
+                        </div>
+                        <form>
+                            <textarea id="textbox" rows="4" cols="165" placeholder="50글자 내로 작성"></textarea>
+                            <input type="submit" class="textbtn" value="등록하기" />
+                        </form>
+                    </div>
+
+                    <div class="commentview">
+                        <table>
+                            <tr>
+                                <td>★★★★★</td>
+                                <td>abc***</td>
+                                <td>주석을 따로 달아놓은 것이 많은 도움이 됩니다.</td>
+                                <td>2022/07/20</td>
+                            </tr>
+                            <tr>
+                                <td>★★★</td>
+                                <td>힘들**</td>
+                                <td>책이 난해하고 힘들어요.</td>
+                                <td>2022/07/15</td>
+                            </tr>
+                            <tr>
+                                <td>★★★★</td>
+                                <td>문학****</td>
+                                <td>한 번쯤은 읽어보면 좋은 책</td>
+                                <td>2022/07/10</td>
+                            </tr>
+                        </table>
+                        <div class="botpagemove">
+                            <ul>
+                                <li><a href="#">&lt;&lt; 처음으로</a></li>
+                                <li><a href="#">&lt; 이전</a></li>
+                                <li>1</li>
+                                <li><a href="#">다음 &gt;</a></li>
+                                <li><a href="#">끝으로 &gt;&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--판매자정보 ~ 배송안내-->
+        <div id="content4">
+            <div id="sellinfo">
+                <h2>판매자정보</h2>
+                <span>인터파크도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당 상품과 내용에 대해 책임지지 않습니다.</span>
+                <table>
+                    <tr>
+                        <td>상호</td>
+                        <td>(주)교보문고</td>
+                    </tr>
+                    <tr>
+                        <td>대표자명</td>
+                        <td>안병현</td>
+                    </tr>
+                    <tr>
+                        <td>사업자등록번호</td>
+                        <td>102-81-11670</td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td>1544-1900</td>
+                    </tr>
+                    <tr>
+                        <td>전자우편주소</td>
+                        <td>callcenter@kyobobook.co.kr</td>
+                    </tr>
+                    <tr>
+                        <td>통신판매업신고번호</td>
+                        <td>01-0653</td>
+                    </tr>
+                    <tr>
+                        <td>영업소재지</td>
+                        <td>서울특별시 종로구 종로 1(종로1가,교보빌딩)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--교환 및 환불-->
+            <div id="change" name="change">
+                <h2>교환/환불</h2>
+                <table>
+                    <tr>
+                        <td>
+                            반품/교환 방법
+                        </td>
+                        <td>
+                            '마이페이지 > 취소/반품/교환/환불' 에서 신청 또는 1:1 문의 게시판 및 고객센터(1577-2555)에서 신청 가능
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환가능 기간</td>
+                        <td>
+                            변심 반품의 경우 출고완료 후 6일(영업일 기준) 이내까지만 가능
+                            단, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환 비용</td>
+                        <td>
+                            변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담
+                            상품이나 서비스 자체의 하자로 인한 교환/반품은 반송료 판매자 부담
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환 불가 사유</td>
+                        <td>
+                            ·소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우
+                            <br />
+                            (단지 확인을 위한 포장 훼손은 제외)
+                            <br />
+                            ·소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우
+                            <br />
+                            예) 화장품, 식품, 가전제품(악세서리 포함) 등
+                            <br />
+                            ·복제가 가능한 상품 등의 포장을 훼손한 경우
+                            <br />
+                            예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집
+                            <br />
+                            ·시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우
+                            <br />
+                            ·전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>상품 품절</td>
+                        <td>공급사(출판사) 재고 사정에 의해 품절/지연될 수 있음</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            소비자 피해 및 환불지연에 따른 배상
+                        </td>
+                        <td>
+                            ·상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은소비자분쟁해결 기준 (공정거래위원회 고시)에 준하여 처리됨
+                            <br />
+                            ·대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의소비자 보호에 관한 법률에 따라 처리함
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--배송안내-->
+            <div id="delivery">
+                <h2>배송안내</h2>
+                <ul>
+                    <li>교보문고 상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다.</li>
+                    <li>출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.</li>
+                    <li>군부대, 교도소 등 특정기관은 우체국 택배만 배송가능합니다.</li>
+                    <li>배송비는 업체 배송비 정책에 따릅니다. 자세한 사항은 약관을 참조바랍니다.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div id="footerbox">
+            <div id="footerlist">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">IR</a></li>
+                    <li>|</li>
+                    <li><a href="#">회사소개</a></li>
+                    <li>|</li>
+                    <li><a href="#">채용공고</a></li>
+                    <li>|</li>
+                    <li><a href="#">우수고객제도</a></li>
+                    <li>|</li>
+                    <li><a href="#">담당자안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">판매자매니저</a></li>
+                    <li>|</li>
+                    <li><a href="#">수익배분프로그램</a></li>
+                    <li>|</li>
+                    <li><a href="#">광고안내</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div class="specific">
+                    <h6>주식회사 인터파크</h6>
+                    <ul>
+                        <li>서울특별시 강남구 삼성로 512 삼성동빌딩 10층</li>
+                        <li>대표이사 김강세</li>
+                        <li>사업자등록번호 824-81-02515 | 통신판매업신고 2022-서울강남-02179</li>
+                    </ul>
+                </div>
+                <div class="specific">
+                    <h6>고객센터</h6>
+                    <ul>
+                        <li>전화 1577-2555</li>
+                        <li>팩스 02-6924-9050</li>
+                        <li>개인정보보호책임자:cpo@interpark.com</li>
+                    </ul>
+                </div>
+                <div class="specific">
+                    <h6>구매안전 서비스</h6>
+                    <ul>
+                        <li>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를</li>
+                        <li>받을 수 있는 구매안전서비스(쇼핑몰보증보험)을 이용하실 수 있습니다.</li>
+                    </ul>
+                </div>
+                <p>
+                    <span>인터파크도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당상품과 내용에 대해 책임지지 않습니다.</span><br />
+                    Copyright INTERPARK Corporation All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

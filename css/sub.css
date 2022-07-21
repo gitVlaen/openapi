@@ -1,0 +1,1505 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    font-family: "맑은 고딕";
+    box-sizing: border-box;
+}
+
+ul, li, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*상단 배너창*/
+#topbanner {
+    width: 1260px;
+    height: 80px;
+    background-color: #C2A59D;
+}
+
+    #topbanner a img {
+        width: 620px;
+        height: 80px;
+    }
+
+    #topbanner > a:nth-child(2) {
+        width: 620px;
+        height: 80px;
+        margin: 0 0 0 -15px;
+    }
+
+    #topbanner #closebtn1 {
+        width: 25px;
+        height: 25px;
+        float: right;
+        padding: 0;
+        color: #fff;
+        background-color: grey;
+        border: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+/*페이지 이동 및 로그인 창*/
+#topwrap {
+    float: left;
+    width: 100%;
+    background-color: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#gateicon {
+    margin: 0 auto;
+    width: 1260px;
+    background-color: none;
+}
+
+    #gateicon > #gatebtn {
+        float: left;
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin: 0px;
+    }
+
+        #gateicon > #gatebtn > ul > li {
+            width: 60px;
+            font-size: 15px;
+            float: left;
+            margin: 0px;
+            padding: 5px 5px 5px 15px;
+            background-color: none;
+            border-left: 1px solid #eee;
+        }
+
+            #gateicon > #gatebtn > ul > li:nth-of-type(2) > a {
+                font-weight: bold;
+                color: red;
+            }
+
+            #gateicon > #gatebtn > ul > li:last-of-type {
+                border-right: 1px solid #eee;
+            }
+
+    #gateicon > #loginlist {
+        width: 350px;
+        height: 30px;
+        background-color: none;
+        float: right;
+    }
+
+.menu1 {
+    float: right;
+    margin: 0px;
+}
+
+    .menu1 > li {
+        font-size: 12px;
+        float: left;
+        margin: 0px;
+        padding: 10px 3px;
+        background-color: none;
+    }
+
+.sub1 {
+    background-color: #eee;
+    border: 1px solid grey;
+    margin: 5px 0 0 0px;
+    display: none;
+    z-index: 3;
+    position: relative;
+    line-height: 25px;
+}
+
+    .sub1 > li {
+        transition: all 0.5s ease;
+    }
+
+/*로고, 검색창, 광고창*/
+#head {
+    float: left;
+    width: 100%;
+    background-color: none;
+    height: 100px;
+}
+
+    #head > #headwrap {
+        width: 1260px;
+        background-color: none;
+        height: 100px;
+    }
+
+        #head > #headwrap > #logo {
+            float: left;
+            width: 280px;
+            background-color: none;
+            height: 100px;
+        }
+
+    #head #headwrap #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #head > #headwrap > #searchwrap {
+        float: left;
+        margin: 0 0 0 100px;
+        width: 500px;
+        background-color: none;
+        height: 100px;
+    }
+
+        #head > #headwrap > #searchwrap > #search {
+            width: 100%;
+            height: 70px;
+            background-color: none;
+        }
+
+            #head > #headwrap > #searchwrap > #search > .searchtext {
+                width: 450px;
+                font-size: 15px;
+                float: left;
+                margin: 35px 0 0 0px;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #EF554D;
+            }
+
+#search > button {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 35px 0 0 0px;
+    border: none;
+    border-bottom: 2px solid #EF554D;
+    background-color: white;
+    cursor: pointer;
+}
+
+    #search > button > img {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 0 0 0 -5px;
+    }
+
+#head > #headwrap > #searchwrap > #searchword {
+    width: 100%;
+    height: 30px;
+    background-color: none;
+}
+
+    #head > #headwrap > #searchwrap > #searchword > ul > li {
+        float: left;
+        margin: 0 10px 0 0px;
+    }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li:first-of-type {
+            margin: 0 10px 0 10px;
+        }
+
+        #head > #headwrap > #searchwrap > #searchword > ul > li > a {
+            font-size: 10px;
+            color: black;
+        }
+
+#head > #headwrap > #banner {
+    float: right;
+    width: 250px;
+    margin: 15px 0 0 0px;
+    background-color: none;
+    height: 80px;
+}
+
+#banner > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*네비게이션*/
+#naviwrap {
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid black;
+    background-color: #EF554D;
+    font-weight: bold;
+    float: left;
+}
+
+    #naviwrap > #navigation {
+        width: 1260px;
+        height: 40px;
+        background-color: none;
+    }
+
+        #naviwrap > #navigation > .allnavi {
+            width: 200px;
+            float: left;
+            height: 38px;
+            background-color: #C12E27;
+            position: relative;
+        }
+
+.allnavi > a > i {
+    margin: 0 10px -5px 0px;
+}
+
+.allnavi > a {
+    width: 200px;
+    float: right;
+    margin: 8px 0 10px 0px;
+    background-color: none;
+    text-align: center;
+    color: #fff;
+}
+
+/*전체 카테고리 하위 네비*/
+
+#subcateg {
+    float: left;
+    width: 1260px;
+    height: auto;
+    margin: 38px 0 0 0px;
+    background-color: white;
+    border: 2px solid #C12E27;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+    #subcateg h2 {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    #subcateg ul {
+        float: left;
+    }
+
+        #subcateg ul li {
+            display: flex;
+            line-height: 25px;
+        }
+
+            #subcateg ul li a {
+                margin: 0 0 0 15px;
+                font-size: 12px;
+                color: grey;
+            }
+
+#subcateg1 {
+    float: left;
+    margin: 0 0 0 3px;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg2 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg3 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg4 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+    border-right: 1px solid #eee;
+}
+
+#subcateg5 {
+    float: left;
+    width: 250px;
+    height: 475px;
+    background-color: none;
+}
+
+#naviwrap > #navigation > .navi1 {
+    width: 400px;
+    float: left;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi1 > ul {
+        margin: 0 0 0 30px;
+        float: left;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi1 > ul > li {
+            float: left;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi1 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+
+#naviwrap > #navigation > .navi2 {
+    width: 600px;
+    float: right;
+    height: 40px;
+    background-color: none;
+}
+
+    #naviwrap > #navigation > .navi2 > ul {
+        margin: 0px;
+        float: right;
+        height: 40px;
+    }
+
+        #naviwrap > #navigation > .navi2 > ul > li {
+            float: left;
+            margin: 0 20px 0 20px;
+            height: 40px;
+        }
+
+            #naviwrap > #navigation > .navi2 > ul > li > a {
+                margin: 10px 20px 0 0px;
+                float: left;
+                background-color: none;
+                color: #fff;
+            }
+
+/*본문*/
+section {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0 0px;
+    background-color: none;
+}
+
+    section #subnavi {
+        width: 1260px;
+        height: 40px;
+        border-bottom: 1px solid #eee;
+    }
+
+#subnavi ul li {
+    float: left;
+    background-color: none;
+    margin: 10px 0 10px 10px;
+    font-size: 11px;
+}
+
+#booktitle {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+    border-bottom: 1px solid grey;
+    line-height: 30px;
+}
+
+    #booktitle h3 {
+        display: inline;
+    }
+
+    #booktitle span:last-child {
+        font-size: 10px;
+        border: 1px solid;
+        margin: 0 0 0 10px;
+        border-radius: 3px;
+        color: grey;
+    }
+
+/*도서 표지 및 도서 구매표*/
+#itemwindow {
+    width: 1260px;
+    height: 530px;
+    background-color: none;
+}
+
+/*상품 이미지*/
+#item {
+    float: left;
+    width: 350px;
+    margin: 5px 0 0 5px;
+    background-color: none;
+    height: auto;
+}
+
+    #item #itemimg {
+        width: 220px;
+        height: 320px;
+        float: left;
+        margin: 0 0 30px 65px;
+        background-color: none;
+    }
+
+        #item #itemimg img {
+            width: 100%;
+            height: 100%;
+        }
+
+    #item #itembtn {
+        float: left;
+        width: 100%;
+        height: 50px;
+        margin: 0px 0 10px 0px;
+        background-color: none;
+    }
+
+        #item #itembtn button {
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+        }
+
+            #item #itembtn button:first-child {
+                margin: 0 0 0 22px;
+            }
+
+    #item .itembox {
+        width: 85%;
+        height: 40px;
+        float: left;
+        text-align: center;
+        padding: 10px;
+        margin: 5px 0px 0 26px;
+        background-color: #eee;
+    }
+
+        #item .itembox span {
+            color: red;
+        }
+
+/*상품 정보 테이블*/
+
+#itemtable {
+    float: left;
+    width: auto;
+    height: 500px;
+    margin: 5px 0 0 5px;
+    background-color: none;
+    font-size: 14px;
+}
+
+    #itemtable tr {
+        margin: 0;
+        background-color: none;
+    }
+
+        #itemtable tr td {
+            margin: 10px 0 10px 50px;
+            font-weight: bold;
+            float: left;
+            background-color: none;
+        }
+
+            #itemtable tr td:first-child {
+                margin: 10px 0 10px 20px;
+            }
+
+            #itemtable tr td ul li {
+                float: left;
+                font-size: 11px;
+                background-color: none;
+                font-weight: normal;
+                margin: 0 0 0 10px;
+                line-height: 25px;
+            }
+
+.point {
+    color: purple;
+    font-weight: bold;
+}
+
+.point2 {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.point3 {
+    color: red;
+    font-weight: bold;
+}
+
+#itemtable tr:nth-of-type(6) td {
+    padding: 10px 315px;
+    color: #fff;
+    background-color: lightskyblue;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+    #itemtable tr:nth-of-type(6) td span {
+        color: yellow;
+    }
+
+#itemtable tr:nth-of-type(7) td ul li:first-of-type {
+    font-weight: bold;
+}
+
+#itemtable tr td button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+    #itemtable tr td button:first-of-type {
+        background-color: grey;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    #itemtable tr td button:nth-of-type(2) {
+        background-color: #EF554D;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    #itemtable tr td button:last-of-type {
+        width: 50px;
+        height: 50px;
+    }
+
+
+/*좌측 사이드광고*/
+
+#advertise {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+#sidead {
+    width: 100px;
+    height: 330px;
+    margin: 0px 0 0 -120px;
+    padding: 0;
+    background-color: none;
+}
+
+    #sidead #banner1 {
+        border: 1px solid #eee;
+        width: 100px;
+        height: 190px;
+        padding: 4px;
+        background-color: none;
+    }
+
+        #sidead #banner1 a #image1 {
+            width: 90px;
+            height: 150px;
+        }
+
+        #sidead #banner1 button {
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border: none;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+#banner1 #sidebprev {
+    margin: 0 0 0 20px;
+}
+
+#banner2 a img {
+    margin: 0 0 0 5px;
+}
+
+/*오른쪽 퀵메뉴*/
+.quickmenu {
+    position: absolute;
+    width: 90px;
+    top: 50%;
+    margin-top: -50px;
+    right: 10px;
+    background: #fff;
+}
+
+    .quickmenu ul {
+        position: relative;
+        float: left;
+        width: 100%;
+        display: inline-block;
+        *display: inline;
+        border: 1px solid #ddd;
+    }
+
+        .quickmenu ul li {
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            display: inline-block;
+            *display: inline;
+        }
+
+            .quickmenu ul li a {
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #999;
+                font-size: 9.5pt;
+            }
+
+                .quickmenu ul li a:hover {
+                    color: #000;
+                }
+
+            .quickmenu ul li:last-child {
+                border-bottom: 0;
+            }
+
+.content {
+    position: relative;
+    min-height: 1000px;
+}
+
+/*이 상품의 분류 ~ 이벤트 기획전*/
+
+#content1 {
+    width: 1260px;
+    margin: -330px auto auto auto;
+    height: auto;
+    background-color: none;
+}
+
+
+/*하위 메뉴*/
+
+#sublist {
+    width: 1260px;
+    height: 100px;
+    background-color: none;
+}
+
+    #sublist ul li a {
+        float: left;
+        width: 252px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #eee;
+        text-align: center;
+        cursor: pointer;
+    }
+
+/*이 상품의 분류*/
+
+#itemsort {
+    width: 1260px;
+    height: 100px;
+    background-color: none;
+}
+
+    #itemsort h2 {
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #itemsort ul {
+        width: 1260px;
+        height: auto;
+    }
+
+        #itemsort ul li {
+            font-size: 13px;
+            float: left;
+            height: auto;
+            margin: 15px 0px 15px 30px;
+        }
+
+/*책소개*/
+
+#bookintro h2 {
+    padding: 0 0 10px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+#bookintro h2 {
+    padding: 0 0 10px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+#bookintro p {
+    padding: 10px 10px 20px 30px;
+}
+
+/*출판사 서평*/
+
+#bookcomment {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+    #bookcomment h2 {
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #bookcomment h4 {
+        padding: 10px 0 15px 30px;
+    }
+
+    #bookcomment p {
+        padding: 0 0 10px 30px;
+    }
+
+
+/*목차*/
+
+#bookindex h2 {
+    margin: 30px 0 0 0px;
+    padding: 0 0 10px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+#indexwrap {
+    width: 1260px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+    #indexwrap ul li {
+        margin: 0 0 10px 30px;
+        font-size: 13px;
+    }
+
+    #indexwrap ul .chapter {
+        margin: 20px 0 20px 30px;
+    }
+
+#indbtn {
+    float: right;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/*저자소개*/
+
+#authorinfo {
+    width: 1260px;
+    height: auto;
+    margin: 20px 0 0 0px;
+    float: left;
+    background-color: none;
+}
+
+    #authorinfo h2 {
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #authorinfo h3 {
+        margin: 30px 0 0 0px;
+        padding: 5px 0 5px 30px;
+        background-color: #eee;
+        border-top: 2px solid #ddd;
+    }
+
+    #authorinfo table {
+        border: 1px solid #ddd;
+        border-spacing: 0px;
+    }
+
+    #authorinfo tr td {
+        background-color: none;
+        padding: 10px 20px;
+        font-size: 13px;
+        line-height: 20px;
+        color: grey;
+    }
+
+        #authorinfo tr td:first-child {
+            text-align: center;
+            border-right: 1px solid #ddd;
+            background-color: #eee;
+        }
+
+/*상품정보제공시*/
+
+#iteminfo {
+    float: left;
+    background-color: none;
+}
+
+    #iteminfo h2 {
+        margin: 30px 0 0 0px;
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #iteminfo table {
+        width: 1260px;
+        height: auto;
+        margin: 10px 0 0 0px;
+        border: 1px solid #ddd;
+        border-spacing: 0px;
+    }
+
+    #iteminfo tr td {
+        padding: 10px 30px;
+        font-size: 13px;
+        border: 1px solid #ddd;
+    }
+
+        #iteminfo tr td:first-child {
+            background-color: #eee;
+        }
+
+        #iteminfo tr td:nth-child(3) {
+            background-color: #eee;
+        }
+
+/*저자의 다른 책*/
+
+#otherbook {
+    float: left;
+    width: 1260px;
+    height: 360px;
+    margin: 10px 0 0 0px;
+    background-color: none;
+    border: 1px solid #ddd;
+}
+
+    #otherbook h2 {
+        padding: 10px 0 10px 30px;
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    #otherbook #contentbox {
+        float: left;
+        width: 100%;
+        height: 320px;
+        background-color: none;
+    }
+
+#contentbox .innerbox1 {
+    width: 190px;
+    height: 280px;
+    background-color: none;
+    margin: 20px 2px 0 15px;
+    float: left;
+}
+
+    #contentbox .innerbox1 a img {
+        width: 150px;
+        margin: 0 0 0 20px;
+    }
+
+    #contentbox .innerbox1 h3 {
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0 0 20px;
+        text-align: center;
+    }
+
+    #contentbox .innerbox1 span {
+        font-size: 12px;
+        margin: 10px 0 0 70px;
+    }
+
+/*이벤트 기획전*/
+
+#event1 {
+    float: left;
+    background-color: none;
+    width: 1260px;
+    height: auto;
+}
+
+    #event1 h2 {
+        width: 100%;
+        float: left;
+        padding: 10px 0 10px 30px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    #event1 a img {
+        width: 100%;
+        margin: 20px 0 30px 0px;
+    }
+
+/*추천도서*/
+
+#content2 {
+    width: 1260px;
+    height: 2350px;
+    background-color: none;
+}
+
+    #content2 #recommend {
+        width: 1260px;
+        height: 800px;
+        background-color: none;
+    }
+
+        #content2 #recommend h2 {
+            padding: 0 0 10px 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+
+.recbox {
+    float: left;
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+    .recbox .inboxtitle {
+        padding: 10px 30px;
+        background-color: none;
+        color: grey;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+    }
+
+/*소설 분야에서 회원이 구매한 책*/
+#innerbox2 {
+    float: left;
+    width: 1260px;
+    height: 330px;
+    background-color: none;
+}
+
+.contentbox1 {
+    width: 190px;
+    height: 280px;
+    background-color: none;
+    margin: 20px 2px 0 15px;
+    float: left;
+}
+
+    .contentbox1 a img {
+        width: 150px;
+        margin: 0 0 0 20px;
+    }
+
+    .contentbox1 h3 {
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0 0 20px;
+        text-align: center;
+    }
+
+    .contentbox1 span {
+        font-size: 12px;
+        margin: 10px 0 0 70px;
+    }
+
+/*조회한 회원들이 같이 본 책*/
+
+#innerbox3 {
+    float: left;
+    width: 1260px;
+    height: 330px;
+    background-color: none;
+}
+
+.contentbox2 {
+    width: 190px;
+    height: 280px;
+    background-color: none;
+    margin: 20px 2px 0 15px;
+    float: left;
+}
+
+    .contentbox2 a img {
+        width: 150px;
+        margin: 0 0 0 20px;
+    }
+
+    .contentbox2 h3 {
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0 0 20px;
+        text-align: center;
+    }
+
+    .contentbox2 span {
+        font-size: 12px;
+        margin: 10px 0 0 70px;
+    }
+
+/*구매한 회원들이 같이 본 책*/
+
+#innerbox4 {
+    float: left;
+    width: 1260px;
+    height: 330px;
+    background-color: none;
+}
+
+.contentbox3 {
+    width: 190px;
+    height: 280px;
+    background-color: none;
+    margin: 20px 2px 0 15px;
+    float: left;
+}
+
+    .contentbox3 a img {
+        width: 150px;
+        margin: 0 0 0 20px;
+    }
+
+    .contentbox3 h3 {
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0 0 20px;
+        text-align: center;
+    }
+
+    .contentbox3 span {
+        font-size: 12px;
+        margin: 10px 0 0 70px;
+    }
+
+
+/*리뷰 ~ 한줄평*/
+
+#content3 {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+
+/*리뷰*/
+#review h2 {
+    padding: 10px 0 10px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+    #review h2 button {
+        float: right;
+        margin: 0px 20px 0 0px;
+        padding: 5px 15px;
+        border: none;
+        background-color: #EF554D;
+        color: #fff;
+        cursor: pointer;
+    }
+
+#review #timeline {
+    float: left;
+    width: 1260px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    background-color: none;
+}
+
+#review #btn1 {
+    display: block;
+    float: right;
+    background-color: none;
+}
+
+    #review #btn1 li {
+        float: left;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+        #review #btn1 li:last-child {
+            margin: 5px 20px 5px 5px;
+        }
+
+#reviewbox {
+    float: left;
+    width: 1260px;
+    height: 210px;
+    background-color: none;
+    overflow: hidden;
+}
+
+#reviewbottom {
+    float: left;
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+#bottom1 {
+    float: left;
+    width: 1260px;
+}
+
+    #bottom1 ul li {
+        float: left;
+        font-size: 12px;
+        margin: 5px 0 5px 10px;
+        color: grey;
+    }
+
+#revbtn {
+    float: right;
+    border: none;
+    margin: 5px 10px 0 0px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/*페이지 이동*/
+
+.botpagemove {
+    float: left;
+    width: 1260px;
+    background-color: #eee;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px 0px;
+}
+
+    .botpagemove ul li {
+        float: left;
+        font-size: 13px;
+        background-color: none;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+        .botpagemove ul li:nth-child(3) {
+            background-color: grey;
+            color: #fff;
+        }
+
+        .botpagemove ul li:first-child {
+            margin: 5px 5px 5px 430px;
+        }
+
+/*리뷰 글*/
+
+#reviewtitle h5 {
+    font-size: 16px;
+    float: left;
+    margin: 10px 0 5px 10px;
+}
+
+#reviewtitle ul {
+    float: right;
+}
+
+    #reviewtitle ul li {
+        float: left;
+        font-size: 13px;
+        margin: 10px 10px 5px 5px;
+        color: grey;
+    }
+
+#innerreview pre {
+    float: left;
+    font-size: 15px;
+}
+
+/*한줄평*/
+
+#comment {
+    float: left;
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+    #comment h2 {
+        padding: 0 0 10px 30px;
+        margin: 0 0 20px 0px;
+        border-bottom: 2px solid #eee;
+    }
+
+#commentbox {
+    width: 1200px;
+    height: auto;
+    background-color: none;
+}
+
+    #commentbox .star_rate {
+        float: left;
+        margin: 0 0 0 15px;
+    }
+
+    #commentbox #textbox {
+        float: left;
+        margin: 15px;
+    }
+
+#comment1 .textbtn {
+    float: left;
+    margin: 15px 0 0 0px;
+    padding: 28px;
+    cursor: pointer;
+}
+
+/*작성된 한줄평 보기*/
+
+.commentview {
+    float: left;
+    width: 1200px;
+    margin: 10px 0 0 0px;
+    height: auto;
+    background-color: none;
+}
+
+    .commentview table {
+        width: 1200px;
+        height: auto;
+        border-spacing: 0px;
+    }
+
+        .commentview table tr td {
+            padding: 0 0 0 15px;
+            border-top: 1px solid #eee;
+            line-height: 30px;
+            font-size: 13px;
+        }
+
+    /*페이지 이동 CSS*/
+
+    .commentview .botpagemove {
+        width: 1200px;
+        height: auto;
+    }
+
+        .commentview .botpagemove ul li:first-child {
+            margin: 5px 5px 5px 400px;
+        }
+
+/*평점 별 CSS*/
+
+#commentbox .star {
+    color: #ddd;
+    position: relative;
+    font-size: 20px;
+}
+
+    #commentbox .star input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    #commentbox .star span {
+        width: 0;
+        position: absolute;
+        left: 0;
+        color: grey;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+/*판매자정보 ~ 배송안내*/
+
+#content4 {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: none;
+}
+
+/*판매자정보*/
+
+#sellinfo {
+    width: 1260px;
+    height: 400px;
+    background-color: none;
+}
+
+    #sellinfo span {
+        margin: 0 0 0 30px;
+        font-size: 13px;
+    }
+
+    #sellinfo h2 {
+        padding: 0 0 10px 30px;
+        margin: 0 0 20px 0px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #sellinfo table {
+        width: 1200px;
+        margin: 15px 0 0 30px;
+        border: 1px solid #ddd;
+        border-spacing: 0px;
+    }
+
+    #sellinfo tr td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 12px;
+        color: grey;
+    }
+
+        #sellinfo tr td:first-child {
+            background-color: #eee;
+        }
+
+/*교환 및 환불*/
+
+#change {
+    width: 1260px;
+    height: 450px;
+    background-color: none;
+}
+
+    #change h2 {
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #change table {
+        width: 1200px;
+        margin: 15px 0 0 30px;
+        border: 1px solid #ddd;
+        border-spacing: 0px;
+    }
+
+    #change tr td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 12px;
+        color: grey;
+    }
+
+        #change tr td:first-child {
+            background-color: #eee;
+        }
+
+
+/*배송안내*/
+
+#delivery {
+    width: 1260px;
+    height: 200px;
+    background-color: none;
+}
+
+    #delivery h2 {
+        padding: 0 0 10px 30px;
+        border-bottom: 2px solid #eee;
+    }
+
+    #delivery ul {
+        margin: 10px 0 0 30px;
+    }
+
+        #delivery ul li {
+            line-height: 30px;
+            list-style: block;
+            margin: 0 0 0 30px;
+            font-size: 12px;
+            color: grey;
+        }
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    float: left;
+    background-color: #eee;
+}
+
+#footerbox {
+    width: 1260px;
+    height: auto;
+    background-color: none;
+}
+
+#footerlist {
+    width: 1260px;
+    height: 50px;
+    background-color: none;
+}
+
+    #footerlist ul li {
+        float: left;
+        margin: 20px 20px 0 0px;
+        font-size: 13px;
+        color: grey;
+    }
+
+        #footerlist ul li a {
+            color: grey;
+        }
+
+    #footerlist > ul > li:first-child > a {
+        color: black;
+        font-weight: bold;
+    }
+
+#info {
+    width: 1260px;
+    height: auto;
+}
+
+    #info .specific {
+        width: 410px;
+        height: 100px;
+        float: left;
+        margin: 10px 0 30px 10px;
+        background-color: none;
+        border-right: 1px solid grey;
+    }
+
+        #info .specific:last-of-type {
+            border-right: none;
+        }
+
+        #info .specific h6 {
+            font-size: 13px;
+        }
+
+        #info .specific li {
+            margin: 0 0 0 10px;
+            font-size: 12px;
+            line-height: 30px;
+            color: grey;
+        }
+
+    #info p span {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #info p {
+        font-size: 12px;
+        color: grey;
+        margin: 0 0 30px 0px;
+    }
